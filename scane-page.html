@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <!-- --font awesome--->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+        <!-- --fonts-- -->
+        <link href="https://db.onlinewebfonts.com/c/1094504ae47cb9cfa800bc04261c211a?family=Geomanist+Regular" rel="stylesheet">
+        <!--owl  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+        <!-- --boostrap -- -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- --style.css-- -->
+         <link rel="stylesheet" href="assets/css/style.css">
+        
+</head>
+<body>
+    <main class="common-bg">
+        <div class="top-img">
+            <img src="assets/images/bgimg.png" alt="">
+        </div>
+        <section class="hero-sec home-page">
+            <div class="container">
+                   <div class="hero-data">
+                    <div class="hero-title">
+                        <div><h1>Gr<span><img src="assets/images/Vector.png" alt=""></span>w Your <br/> Way 2024: </h1>
+                    <div class="">
+                     <h3>Expand Your  SKills Palette <br/> With <span> M<span><img src="assets/images/small.png" alt="" class="small-img"></span>BI</span> </h3>
+                    </div></div>
+                 </div>
+                </div>
+                <p class="scaner-para">Scan the QR codes provided at Skills Showcases, talks, or activities to Grow Your Way, and unlock prizes. Camera permissions required.</p>
+               
+                <video id="vid" class="scanner-scan" autoplay muted></video>
+                <p class="scaner-para">Unable to scan? <br/> Enter the numerical code below the QR symbol.</p>
+               <form class="scanner-form row ">
+                <div class="col-8">
+                    <input type="text" placeholder="Enter code manually" class="form-control">
+                </div>
+                <div class="col-4">
+                    <button type="submit" class="btn">Submit</button>
+                </div>
+               </form>
+            </div>
+          </section>
+          <a class="center-img scner-centerimg" href="prize_claim_page.html">
+            <img src="assets/images/Group 51.png" alt="">
+          </a>
+        <img src="assets/images/Rectangle 375.png" alt="" class="shadow-img">
+      <nav class="bottom-nav scnner-nav">
+        <ul class="nav">
+            <li>
+                <a href="home_01.html" class="active">
+                    <img src="assets/images/h1.svg" alt="">
+                    <h3>Home</h3>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="assets/images/h2.svg" alt="">
+                    <h3>Event
+                        Schedule</h3>
+                </a>
+            </li>
+            <li>
+                <a href="#"  >
+                    <h3 class="scane-nav-h3">Scan</h3>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="assets/images/h3.svg" alt="">
+                    <h3>Refresh</h3>
+                </a>
+            </li>
+            <li>
+                <a href="prize_claim_page.html">
+                    <img src="assets/images/h4.svg" alt="">
+                    <h3>Your QR</h3>
+                </a>
+            </li>
+        </ul>
+    </nav>
+        </main>
+
+           <!-- -----js---- -->
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="assets/js/main.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" ></script>
+   <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        let video = document.getElementById("vid");
+        let mediaDevices = navigator.mediaDevices;
+
+        mediaDevices.getUserMedia({
+            video: { facingMode: { ideal: "environment" } }, // Use back camera
+            audio: true,
+        })
+        .then((stream) => {
+            // Changing the source of video to current stream.
+            video.srcObject = stream;
+            video.addEventListener("loadedmetadata", () => {
+                video.play();
+            });
+        })
+        .catch(alert);
+    });
+</script>
+</body>
+</html>

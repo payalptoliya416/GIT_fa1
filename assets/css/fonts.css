@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "Geomanist";
+    src: url("https://db.onlinewebfonts.com/t/4fe5c6c2a6b1121df1eb3fa41e7edabe.eot");
+    src: url("https://db.onlinewebfonts.com/t/4fe5c6c2a6b1121df1eb3fa41e7edabe.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/4fe5c6c2a6b1121df1eb3fa41e7edabe.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/4fe5c6c2a6b1121df1eb3fa41e7edabe.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/4fe5c6c2a6b1121df1eb3fa41e7edabe.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/4fe5c6c2a6b1121df1eb3fa41e7edabe.svg#Geomanist")format("svg");
+}
